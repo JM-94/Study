@@ -1,0 +1,7 @@
+D:\Ai\JMfile\C#\Test0408\Test0408\bin\Debug\Test0408.exe.config
+D:\Ai\JMfile\C#\Test0408\Test0408\bin\Debug\Test0408.exe
+D:\Ai\JMfile\C#\Test0408\Test0408\bin\Debug\Test0408.pdb
+D:\Ai\JMfile\C#\Test0408\Test0408\obj\Debug\ClassTest1.csprojAssemblyReference.cache
+D:\Ai\JMfile\C#\Test0408\Test0408\obj\Debug\ClassTest1.csproj.CoreCompileInputs.cache
+D:\Ai\JMfile\C#\Test0408\Test0408\obj\Debug\Test0408.exe
+D:\Ai\JMfile\C#\Test0408\Test0408\obj\Debug\Test0408.pdb

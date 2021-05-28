@@ -1,0 +1,24 @@
+C:\Users\KB\Desktop\C# 수업\Test0409\Test0409\bin\Debug\net5.0\Test0409.exe
+C:\Users\KB\Desktop\C# 수업\Test0409\Test0409\bin\Debug\net5.0\Test0409.deps.json
+C:\Users\KB\Desktop\C# 수업\Test0409\Test0409\bin\Debug\net5.0\Test0409.runtimeconfig.json
+C:\Users\KB\Desktop\C# 수업\Test0409\Test0409\bin\Debug\net5.0\Test0409.runtimeconfig.dev.json
+C:\Users\KB\Desktop\C# 수업\Test0409\Test0409\bin\Debug\net5.0\Test0409.dll
+C:\Users\KB\Desktop\C# 수업\Test0409\Test0409\bin\Debug\net5.0\ref\Test0409.dll
+C:\Users\KB\Desktop\C# 수업\Test0409\Test0409\bin\Debug\net5.0\Test0409.pdb
+C:\Users\KB\Desktop\C# 수업\Test0409\Test0409\obj\Debug\net5.0\Test0409.csprojAssemblyReference.cache
+C:\Users\KB\Desktop\C# 수업\Test0409\Test0409\obj\Debug\net5.0\Test0409.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\KB\Desktop\C# 수업\Test0409\Test0409\obj\Debug\net5.0\Test0409.AssemblyInfoInputs.cache
+C:\Users\KB\Desktop\C# 수업\Test0409\Test0409\obj\Debug\net5.0\Test0409.AssemblyInfo.cs
+C:\Users\KB\Desktop\C# 수업\Test0409\Test0409\obj\Debug\net5.0\Test0409.csproj.CoreCompileInputs.cache
+C:\Users\KB\Desktop\C# 수업\Test0409\Test0409\obj\Debug\net5.0\Test0409.dll
+C:\Users\KB\Desktop\C# 수업\Test0409\Test0409\obj\Debug\net5.0\ref\Test0409.dll
+C:\Users\KB\Desktop\C# 수업\Test0409\Test0409\obj\Debug\net5.0\Test0409.pdb
+C:\Users\KB\Desktop\C# 수업\Test0409\Test0409\obj\Debug\net5.0\Test0409.genruntimeconfig.cache
+D:\Ai\JMfile\C#\Test0409\Test0409\obj\Debug\net5.0\Test0409.csprojAssemblyReference.cache
+D:\Ai\JMfile\C#\Test0409\Test0409\obj\Debug\net5.0\Test0409.GeneratedMSBuildEditorConfig.editorconfig
+D:\Ai\JMfile\C#\Test0409\Test0409\obj\Debug\net5.0\Test0409.AssemblyInfoInputs.cache
+D:\Ai\JMfile\C#\Test0409\Test0409\obj\Debug\net5.0\Test0409.AssemblyInfo.cs
+D:\Ai\JMfile\C#\Test0409\Test0409\obj\Debug\net5.0\Test0409.csproj.CoreCompileInputs.cache
+D:\Ai\JMfile\C#\Test0409\Test0409\obj\Debug\net5.0\Test0409.dll
+D:\Ai\JMfile\C#\Test0409\Test0409\obj\Debug\net5.0\ref\Test0409.dll
+D:\Ai\JMfile\C#\Test0409\Test0409\obj\Debug\net5.0\Test0409.pdb

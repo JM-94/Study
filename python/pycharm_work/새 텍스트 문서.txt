@@ -1,0 +1,11 @@
+sql= "INSERT INTO daegu"\
+    "( idx , name ,location, code1 , code1_name ,code2 ,code2_name ,code3 ,code4 ,"\
+    "code4_name ,code_sido ,code_sidoname ,code_gu ,code_guname ,code_dong ,code_dongname ,"\
+    "code_legar ,code_legarname ,code_jibun ,code_jibunname ,code_gubun ,code_gubunname ,"\
+    "code_bon ,code_bonname ,gibon_bon ,gibon_bu ,gibon_addr ,code_doro ,code_doroname ,"\
+    "building_bon ,building_bu ,building_num ,doro_addr ,oldzip ,newzip ,donginfo ,"\
+    "floorinfo ,hoinfo ,longitude ,latitude )"\
+    "VALUES"\
+    "(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,"\
+    "%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,"\
+    "%s,%s,%s)";
