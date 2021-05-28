@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const a = Number(prompt('첫번째 숫자', ''))
+        const b = Number(prompt('두번째 숫자', ''))
+        if (a > b) {
+            alert('첫번째가 큼')
+        } else if (a === b) {
+            alert('같음')
+        } else if (a < b) {
+            alert('두번째가 큼')
+        }
+
+        const x = 15
+        if (x > 10) {
+            if (x < 20) {
+                console.log('조건에 맞습니다.')
+            }
+        }
+        if (x > 10 && x < 20) {
+            console.log('조건에 맞습니다')
+        }
+
+
+        const c = Number(prompt('숫자를 입력해주세요', ''))
+        if (c > 0) {
+            console.log('입력한 숫자는 양수입니다')
+        } else if (c == 0) {
+            console.log('입력한 숫자는 0입니다')
+        } else if (c < 0) {
+            console.log('입력한 숫자는 음수입니다')
+        }
+
+
+        const d = Number(prompt('숫자를 입력해주세요.', ''))
+        if (d % 2 == 0) {
+            console.log('짝수입니다.')
+        } else if (d % 2 == 1) {
+            console.log('홀수입니다.')
+        } else if (d == 0) {
+            console.log('0입니다.')
+        }
+
+        const e = Number(prompt('월을 입력해주세요.', ''))
+        if (e >= 3 && e <= 5) {
+            console.log('봄입니다')
+        } else if (e >= 6 && e <= 8) {
+            console.log('여름입니다')
+        } else if (e >= 9 && e <= 11) {
+            console.log('가을입니다')
+        } else if (e <= 2 && e > 0) {
+            console.log('겨울입니다')
+        } else if (e == 12) {
+            console.log('겨울입니다.')
+        } else if (e >= 13) {
+            console.log('몇월까지 있는지 아는거지?')
+        } else if (e < 1) {
+            console.log('몇월까지 있는지 아는거지?')
+        }
+        // 겨울 (12 ==e || (1<=e && e<=2))
+    </script>
+</body>
+
+</html>

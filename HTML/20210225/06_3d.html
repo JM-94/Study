@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap
+        {
+            width: 200px;
+            height: 200px;
+            position: relative;
+        }
+        .box
+        {
+            width: 200px;
+            height: 200px;
+            left: 0;
+            right: 0;
+            position: absolute; 
+
+        }
+        .box:nth-child(1){background-color: gold;}
+        .box:nth-child(2){background-color: cyan;}
+        .box:nth-child(3){background-color: blue;}
+        .box:nth-child(4){background-color: silver;}
+        .box:nth-child(5){background-color: red;}
+        .box:nth-child(6){background-color: goldenrod;}
+
+        .box:nth-child(1){transform: translate3d(0px, 0px, 100px);}
+        .box:nth-child(2){transform: rotateY(90deg) translate3d(0px, 0px, 100px);}
+        .box:nth-child(3){transform: rotateY(180deg) translate3d(0px, 0px, 100px);}
+        .box:nth-child(4){transform: rotateY(270deg) translate3d(0px, 0px, 100px);}
+        .box:nth-child(5){transform: rotateX(90deg) translate3d(0px, 0px, 100px);}
+        .box:nth-child(6){transform: rotateX(270deg) translate3d(0px, 0px, 100px);}
+
+
+        .wrap
+        {
+            transform-style: preserve-3d;
+        }
+
+        @keyframes _3d_ani
+        {
+            0%{transform : rotateX(0deg) rotateY(0deg) rotateZ(0deg)}
+            100%{transform : rotateX(360deg) rotateY(360deg) rotateZ(360deg)}
+        }
+
+        .wrap
+        {
+            animation-name: _3d_ani;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            left: 100px;
+            top: 100px;
+        }
+
+        .box{opacity: 0.3;}
+
+        /* body
+        {
+            /* 원근법 */
+            -webkit-perspective: 500;
+        } */
+    </style>
+</head>
+<body>
+
+    <div class="wrap">
+        <div class="box">내일</div>
+        <div class="box">어디</div>
+        <div class="box">가지</div>
+        <div class="box">고민</div>
+        <div class="box">카페</div>
+        <div class="box">식당</div>
+    </div>
+
+    
+</body>
+</html>

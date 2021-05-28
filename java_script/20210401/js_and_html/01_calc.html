@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="one" type="text"> +
+    <input id="two" type="text"> =
+    <span id="result">결과</span>
+    <div>
+        <input value="+" type="button" onclick="sum()">
+    </div>
+
+    <input id="one2" type="text"> -
+    <input id="two2" type="text"> =
+    <span id="result2">결과</span>
+    <div>
+        <input value="-" type="button" onclick="ims()">
+    </div>
+
+    <input id="one3" type="text"> *
+    <input id="two3" type="text"> =
+    <span id="result3">결과</span>
+    <div>
+        <input value="*" type="button" onclick="mul()">
+    </div>
+
+    <input id="one4" type="text"> /
+    <input id="two4" type="text"> =
+    <span id="result4">결과</span>
+    <div>
+        <input value="/" type="button" onclick="mod()">
+    </div>
+    <script>
+        function sum()
+        {
+            let one = document.getElementById("one").value
+            let two = document.getElementById("two").value
+            let sum = Number(one)+Number(two)
+            alert(sum)
+            document.getElementById("result").innerText
+            = sum
+        }
+
+        function ims()
+        {
+            let one2 = document.getElementById("one2").value
+            let two2 = document.getElementById("two2").value
+            let ims = Number(one2)-Number(two2)
+            alert(ims)
+            document.getElementById("result2").innerText
+            = ims
+        }
+
+        function mul()
+        {
+            let one3 = document.getElementById("one3").value
+            let two3 = document.getElementById("two3").value
+            let mul = Number(one3)*Number(two3)
+            alert(mul)
+            document.getElementById("result3").innerText
+            = mul
+        }
+
+        function mod()
+        {
+            let one4 = document.getElementById("one4").value
+            let two4 = document.getElementById("two4").value
+            let mod = Number(one4)/Number(two4)
+            alert(mod)
+            document.getElementById("result4").innerText
+            = mod
+        }
+    </script>
+
+
+
+</body>
+</html>

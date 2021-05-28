@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box
+        {
+            border: 10px solid black;
+            width: 100px;
+            height: 100px;
+        }
+        .red
+        {
+            background-color: red;
+            position: static; /* 기본값 */
+            left: 50px; /* 소용없음 */
+        }
+        .green
+        {
+            background-color: cyan;
+            position: relative; /* 기본값 */
+            left: 50px;
+        }
+        .blue
+        {
+            background-color: blueviolet;
+            position: fixed; /* 기본값 */
+            left: 500px;
+            top: 500px;
+        }
+        .pink
+        {
+            background-color: hotpink;
+            position: absolute; /*  */
+            left: 20px;
+            top: 20px;
+            width: 30px;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box red">
+        <div class="box pink">1</div>
+    </div>
+    <div class="box green"></div>
+    <div class="box blue"></div>
+   
+    <div class="box pink">1</div>
+    <div class="box green">
+        <div class="box pink">2</div>
+   
+</body>
+</html>

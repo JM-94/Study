@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //p.126 3,4,5
+        const input1 = prompt('cm단위의 숫자를 입력해주세요.')
+        const cm = input1
+        const inch = cm*0.393701
+        console.log(`입력 값 : ${input1}`)
+        console.log(`${cm}cm는 ${inch}inch입니다`)
+
+
+        const input2 = prompt('원의 반지름을 입력해주세요.')
+        const ha = 3.14*input2*input2
+        const ha2 = 2*3.14*input2
+        console.log(`입력 값 : ${input2}`)
+        console.log(`원의 반지름 : ${input2}`)
+        console.log(`원의 넓이 : ${ha}`)
+        console.log(`원의 둘레 : ${ha2}`)
+        /*
+        const input2 = prompt('원의 반지름을 입력해주세요.')
+        const pi = 3.14
+        console.log(`원의 넓이 : ${input2*input2*pi}, 둘레 : ${2*input2*pi}`)
+        */
+
+
+        const input3 = prompt('달러 단위의 금액을 입력해주세요.')
+        const krw = input3*1207
+        console.log(`입력 값 : ${input3}`)
+        console.log(`달러 : ${input3}`)
+        console.log(`-> 원화 : ${krw}`)
+        /*
+        const input3 = prompt('달러 단위의 금액을 입력해주세요.')
+        console.log(`-> 원화 : ${input*1207}`)
+        */
+    </script>
+</body>
+</html>

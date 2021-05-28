@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //형변환
+        
+        let exaple = "273"
+        console.log(typeof(exaple))
+        console.log(exaple+10)
+        console.log(typeof(Number(exaple)))
+        console.log(Number(exaple)+10)
+        let ex = 100
+        console.log(ex+10)
+        console.log(String(ex)+10)
+        console.log(Number("abc")) // NaN Not a Number 
+
+        console.log(typeof(273+""))
+        
+        //inch를 cm로 바꾸는 예제
+        const rawInput = prompt('inch 단위의 숫자를 입력해라')
+        const inch = rawInput //책에선 Number(rawInput)이라고 되어 있음
+        const cm = inch*2.54
+        console.log(`${inch}inch는 ${cm}cm 입니다.`)
+
+    </script>
+</body>
+</html>

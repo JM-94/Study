@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box
+        {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            position: absolute;
+        }
+        .wrap
+        {
+            position: relative;
+        }
+        .box
+        {
+            animation-name: animation_test;
+            animation-duration: 4s;
+
+            animation-fill-mode: both;
+            animation-direction: alternate; /*앞뒤로 왔다 갔다*/
+            animation-iteration-count: infinite;
+        }
+        @keyframes animation_test{
+            0%{left: 0; top: 0;}
+            50%{ left: 100px; top:0;}
+            100% {left: 200px; top: 200px;}
+        }
+    </style>
+
+
+</head>
+<body>
+    <div class="wrap"> <!-- position:realative -->
+        <div class="box"></div> <!-- position:absolute -->
+
+    </div>
+</body>
+</html>

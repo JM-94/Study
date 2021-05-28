@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let input = []
+        for(let i = 0 ; i<5; i++)
+        {
+            //Number로 감싸는 걸 여기에 한 번 하거나
+            input[i] = Number(prompt((Number(i)+1)+"번째 값은?"))
+        }
+        alert(input)
+
+        //여기에 두 번 하기
+        let min = input[0]
+        let max = input[0]
+
+        for(let i =0; i<input.length; i++)
+        {
+            if(min>input[i])
+                min = input[i]
+            if(max<input[i])
+                max = input[i]
+        }
+        alert("최솟값 : " + min)
+        alert("최댓값 : " + max)
+    </script>
+</body>
+</html>

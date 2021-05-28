@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button id="scissors" onclick="start('가위')">가위</button>
+    <button id="rock" onclick="start('바위')">바위</button>
+    <button id="paper" onclick="start('보')">보</button>
+
+    <div></div> <!-- 줄구분-->
+
+
+    나<img id="mine">
+    컴퓨터<img id="computer">
+    <h1 id="result">결과</h1>
+
+
+    <script>
+        function start(mine) {
+            console.log("나 : " + mine)
+            const RockScissorsPaper = ['가위', '바위', '보']
+            const computer = RockScissorsPaper[Math.floor(Math.random() * 3)]
+            console.log("컴퓨터 : " + computer)
+            let myresult = document.getElementById('mine') //img
+            let computerResult = document.getElementById('computer') //img
+            let result = document.getElementById('result') //h1
+
+            switch (mine) {
+                case '가위':
+                    myresult.src = 'img/가위.png'
+                    switch (computer) {
+                        case '가위':
+                            console.log('비김')
+                            computerResult.src = 'img/가위.png'
+                            result.innerText= "비김"
+                            break
+                        case '바위':
+                            console.log('짐')
+                            computerResult.src = 'img/바위.png'
+                            result.innerText= "짐"
+                            break
+                        case '보':
+                            console.log('이김')
+                            computerResult.src = 'img/보.png'
+                            result.innerText= "이김"
+                            break
+                    }
+                    break
+                case '바위':
+                    myresult.src = 'img/바위.png'
+                    switch (computer) {
+                        case '가위':
+                            console.log('이김')
+                            computerResult.src = 'img/가위.png'
+                            result.innerText= "이김"
+                            break
+                        case '바위':
+                            console.log('비김')
+                            computerResult.src = 'img/바위.png'
+                            result.innerText= "비김"
+                            break
+                        case '보':
+                            console.log('짐')
+                            computerResult.src = 'img/보.png'
+                            result.innerText= "짐"
+                            break
+                    }
+                    break
+                case '보':
+                    myresult.src = 'img/보.png'
+                    switch (computer) {
+                        case '가위':
+                            console.log('짐')
+                            computerResult.src = 'img/가위.png'
+                            result.innerText= "짐"
+                            break
+                        case '바위':
+                            console.log('이김')
+                            computerResult.src = 'img/바위.png'
+                            result.innerText= "이김"
+                            break
+                        case '보':
+                            console.log('비김')
+                            computerResult.src = 'img/보.png'
+                            result.innerText= "비김"
+                            break
+                    }
+                    break
+            }
+        }
+        start('가위') //내가 가위를 낸 경우
+        start('바위') //내가 바위를 낸 경우
+        start('보') //내가 보를 낸 경우
+    </script>
+    <script>
+        function practice() {
+            const mine = prompt("가위바위보") // 셋 중 하나 입력받기
+            const computer = Math.floor(Math.random() * 3) //0,1,2 셋 중 하나
+            const 게임 = ["가위", "바위", "보"]
+            console.log("나 : " + mine)
+            console.log("컴퓨터 : " + 게임[computer])
+        }
+        // practice()
+    </script>
+</body>
+
+</html>

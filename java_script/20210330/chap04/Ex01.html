@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 20210331문제 1 -->
+    <script>
+        let num = [];
+        let max = 0;
+        let min = num[0]
+
+        for (let i = 0; i < 5; i++) {
+            num[i] = parseInt(prompt((i + 1) + '번째 입력'))
+        }
+
+        for (let i = 0; i < 5; i++) {
+            if (num[i] > max)
+                max = num[i]
+        }
+
+
+        for (let i = 0; i < 5; i++) {
+            if (num[i] < min)
+                min = num[i]
+        }
+
+        alert('최댓값 : ' + max)
+        alert('최솟값 : ' + min)
+    </script>
+    <!-- 20210331문제
+        1. 5개의 숫자를 입력받은 뒤 가장 작은 수와 가장 큰 수를 출력하는 프로그램을 작성하시오.
+
+
+        2. 아래의 규칙을 따르는 수열의 20번째 숫자를 프로그램을 만들어 찾으시오.
+        1, 11, 112, 1121, 122111, 112213
+        첫 번째 수열 : 1
+        두 번째 수열 : 1이 1개 = 11
+        세 번째 수열 : 1이 2개 = 12
+        네 번째 수열 1이 1개, 2가 1개 = 1121
+        다섯 번째 수열 : 1이 2개, 2가 1개, 1이 1개 = 122111
+        여섯 번째 수열 : 1이 1개, 2가 2개 1이 3개 = 112213
+
+        3. 입력 : 1 
+        출력 : *
+        입력 : 2
+        출력 : *
+                *
+              *
+                *
+        입력 : 3
+        출력 : **
+                *
+               **
+                *
+               **
+                *
+        입력 : 4
+        출력 : **
+                **
+               **
+                **
+               **
+                **
+               **
+                **
+
+    -->
+</body>
+
+</html>

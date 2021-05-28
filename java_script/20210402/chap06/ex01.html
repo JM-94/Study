@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div>    
+        <button id="one" onclick="GO('가위')">가위</button>
+        <button id="two" onclick="GO('바위')">바위</button>
+        <button id="three" onclick="GO('보')">보</button>    
+    </div>
+    <script>
+        function GO(you){
+        const com = ['가위', '바위','보']
+        const num =  [Math.floor((Math.random()*10)%3)]
+        
+        console.log("나 : "+you)
+        console.log("컴퓨터 : "+com)
+        }
+
+        switch(you)
+        {
+            case '가위' :
+                
+                switch(com){
+                    case '가위':
+                        console.log(mine+computer+"draw")
+                }
+        }
+
+
+
+        if(num1 == 1){
+            com = '가위'
+        }else if(num1 == 2){
+            com = '바위'
+        }else if(num1 ==3){
+            com = '보'
+        }
+        
+        
+        if(you == num1){            
+            alert('비김')
+        }else if(you == 3 && num1 == 1){           
+            alert('짐')
+        }else if(you == 2 && num1 == 3){            
+            alert('짐')
+        }else if( you == 1 && num1 == 2){           
+            alert('짐')
+        }else{           
+            alert('이김')
+        }
+
+        
+        function start(mine)
+        {
+            const RockScissorsPaper = ['가위', '바위', '보']
+            const computer = RockScissorsPaper[Math.floor(Math.random()*3)] //0,1,2
+            console.log("나:"+mine)
+            console.log("컴퓨터:"+computer)
+            let myResult = document.getElementById('myResult')
+            let computerResult = document.getElementById('computerResult')
+            let gameResult = document.getElementById('gameResult')
+
+            switch(mine)
+            {
+                case '가위':
+                    myResult.src = 'scissors.png'
+                    switch(computer)
+                    {
+                        case '가위':
+                            console.log(mine+computer+"draw")
+                            gameResult.innerText = 'draw'
+                            computerResult.src = 'scissors.png'
+
+                            break;
+                        case '바위':
+                           console.log(mine+computer+"Loose")
+                           gameResult.innerText = 'Loose'
+                           computerResult.src = 'rock.png'
+
+                            break;
+                        case '보':
+                            console.log(mine+computer+"Win")
+                            gameResult.innerText = 'Win'
+                            computerResult.src = 'paper.png'
+
+                            break;
+                    }
+                    break;
+                case '바위':
+                myResult.src = 'rock.png'
+
+                switch(computer)
+                {
+                    case '가위':
+                        console.log(mine+computer+"Win")
+                        gameResult.innerText = 'Win'
+                        computerResult.src = 'scissors.png'
+
+                        break;
+                    case '바위':
+                        console.log(mine+computer+"Draw")
+                        gameResult.innerText = 'draw'
+                        computerResult.src = 'rock.png'
+
+                        break;
+                    case '보':
+                        console.log(mine+computer+"Loose")
+                        gameResult.innerText = 'Loose'
+                        computerResult.src = 'paper.png'
+
+                        break;
+                }
+                    break;
+                case '보':
+                myResult.src = 'paper.png'
+
+                switch(computer)
+                {
+                    case '가위':
+                        console.log(mine+computer+"Loose")
+                        gameResult.innerText = 'Loose'
+                        computerResult.src = 'scissors.png'
+
+                        break;
+                    case '바위':                    
+                        console.log(mine+computer+"Win")
+                        gameResult.innerText = 'Win'
+                        computerResult.src = 'rock.png'
+
+                        break;
+                    case '보':                    
+                        console.log(mine+computer+"Draw")
+                        gameResult.innerText = 'draw'
+                        computerResult.src = 'paper.png'
+
+                        break;
+                }
+                    break;
+            }
+        }
+    
+    </script>
+</body>
+</html>

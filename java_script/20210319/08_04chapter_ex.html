@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //1. 1 ~100까지의 합을 구하되 3의 배수값만 구한 걸 출력
+        let b =0
+        for(let a= 1; a<=100; a++)
+        {
+            if ((a%3) == 0){
+                b = b+a
+            }else{
+
+            }
+            console.log(b)
+        }
+        //2. 숫자를 입력받아서, 분과 초로 값표시 ex) 입력 : 124, 출력 : 2분 4초
+        const x = prompt('숫자 입력')
+        const y = parseInt(x/60)
+        const z = x%60
+        alert(`${x}초는 ${y}분 ${z}초 입니다.`)
+
+    </script>
+</body>
+</html>

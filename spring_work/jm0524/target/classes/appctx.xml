@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+<!-- @Bean 이거 사용되도록 설정
+	 어노테이션 문법 사용 설정 
+-->
+	<context:annotation-config></context:annotation-config>
+	
+	<bean class="jm0524.AA"></bean>
+	<bean class="jm0524.BB"></bean>
+<!-- 	id=cc1 직접줘서 @Qualifier 사용 -->
+	<bean class="jm0524.CC" id="cc1"></bean>
+	<bean class="jm0524.DD"></bean>
+	<bean class="jm0524.JMService"></bean>
+
+</beans>
