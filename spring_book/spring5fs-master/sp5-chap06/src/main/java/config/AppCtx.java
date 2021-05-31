@@ -15,7 +15,8 @@ public class AppCtx {
 		client.setHost("host");
 		return client;
 	}
-	
+	// 스프링 객체 담는 통안에 넣을 때 connect 함수 실행
+	// destoryMethod는 스프링컨터에서 뺄때
 	@Bean(initMethod = "connect", destroyMethod = "close")
 	public Client2 client2() {
 		Client2 client = new Client2();
