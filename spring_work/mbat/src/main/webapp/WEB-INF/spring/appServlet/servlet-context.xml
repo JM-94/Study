@@ -36,19 +36,16 @@
 		<beans:property name="password" value="1234"></beans:property>
 	</beans:bean>
 
-	<beans:bean id="sqlSeesionFactory"
-		class="org.mybatis.spring.SqlSessionFactoryBean">
+	<beans:bean id="sqlSeesionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
 		<beans:property name="dataSource" ref="ds" />
 		<beans:property name="mapperLocations"
-			value="classpath:/mapper/**/*_SQL.xml" />
+			value="classpath:/mapper/*_SQL.xml" />
 	</beans:bean>
 
 	<beans:bean id="sqlSessionTemplate" class="org.mybatis.spring.SqlSessionTemplate">
 		<beans:constructor-arg index="0" ref="sqlSeesionFactory" />
 	</beans:bean>
 
-	<context:component-scan base-package="com.org.mbat" />
-
-
+	<context:component-scan	base-package="com.org.mbat" />
 
 </beans:beans>
