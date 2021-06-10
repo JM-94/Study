@@ -5,15 +5,23 @@ import javax.servlet.http.HttpSession;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
 public class ClsController {
 
-	@RequestMapping("/aop")
-	public String odA(HttpServletRequest request) {
+	// 세션 로그인 
+	@RequestMapping("/aopchk")
+	@ResponseBody
+	public String sessionchk(HttpServletRequest request) {
 		System.out.println("여기에서 aop 실행");
-		HttpSession session = request.getSession();
-		session.setAttribute("id", "1234");
-		return "aop/doA";
+		return "session...check.....";
+	}
+	
+	// 세션 로그인 
+	@RequestMapping("/aopdoa")
+	public String doa(HttpServletRequest request) {
+		System.out.println("여기에서 aop 실행");
+		return "aop/doa";
 	}
 }

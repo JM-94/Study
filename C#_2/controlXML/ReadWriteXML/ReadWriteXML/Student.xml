@@ -1,0 +1,25 @@
+﻿<studenrs>
+	<student>
+		<name>안준모</name>	
+		<age>28</age>
+		<hakbeon>130610</hakbeon>
+		<hakgw>경영</hakgw>
+		<gender>남</gender>
+	</student>
+	
+	<student>
+		<name>박정은</name>
+		<age>28</age>
+		<hakbeon>130609</hakbeon>
+		<hakgw>경영</hakgw>
+		<gender>영</gender>
+	</student>
+	
+	<student>
+		<name>이한글</name>
+		<age>28</age>
+		<hakbeon>130780</hakbeon>
+		<hakgw>산림</hakgw>
+		<gender>남</gender>
+	</student>
+</studenrs> 
