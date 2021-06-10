@@ -17,3 +17,4 @@ D:\Ai\Study\C#_2\controlXML\ReadWriteXML\ReadWriteXML\obj\Debug\ReadWriteXML.csp
 D:\Ai\Study\C#_2\controlXML\ReadWriteXML\ReadWriteXML\obj\Debug\ReadWriteXML.exe
 D:\Ai\Study\C#_2\controlXML\ReadWriteXML\ReadWriteXML\obj\Debug\ReadWriteXML.pdb
 D:\Ai\Study\C#_2\controlXML\ReadWriteXML\ReadWriteXML\bin\Debug\ReadWriteXML.pdb
+D:\Ai\Study\C#_2\controlXML\ReadWriteXML\ReadWriteXML\obj\Debug\ReadWriteXML.csprojAssemblyReference.cache
