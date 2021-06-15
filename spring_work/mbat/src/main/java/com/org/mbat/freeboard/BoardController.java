@@ -1,7 +1,11 @@
 package com.org.mbat.freeboard;
 
+import java.util.Arrays;
+import java.util.List;
+
 import javax.servlet.http.HttpServletRequest;
 
+import org.mybatis.spring.SqlSessionTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -25,12 +29,23 @@ public class BoardController {
 	 */
 	
 	@Autowired
+	SqlSessionTemplate sst;
+	
+	@Autowired
 	BoardService bs;
 	
 	@RequestMapping(value = "/freeboard", method = RequestMethod.GET)
 	public String freeboard(Model model) {
 		System.out.println("게시판홈");
+		List list = sst.selectList("freeboard.select", 10);
+		model.addAttribute("list", list);
+		
 //		bs.select();
+//		model.addAttribute("data",	"mydata");
+//		List list = Arrays.asList(new Board(1,"title","pass","content", "wdate", "email",null,null),
+//									new Board(2,"tit","pa","cot","wde","eil",null,null));
+//		model.addAttribute("list",list);
+		
 		return "freeboard/freeboard";
 	}
 	

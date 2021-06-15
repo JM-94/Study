@@ -11,7 +11,10 @@
 		(#{title},'1234',#{content},
 		NOW(),#{name},#{email});
 	</insert>
-	<select id="select">
+	<select id="select" parameterType="int" 
+						resultType="com.org.mbat.freeboard.Board">
 		SELECT * FROM FREEBOARD
+		order by idx desc
+		limit #{start},10;
 	</select>
 </mapper>

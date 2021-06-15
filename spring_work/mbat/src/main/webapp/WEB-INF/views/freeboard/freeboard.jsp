@@ -28,7 +28,10 @@
 </head>
 
 <body id="page-top">
-
+	<%-- ${data}<br>
+	${strlist}<br>
+	${mylist}<br> --%>
+	
     <!-- Page Wrapper -->
     <div id="wrapper">
 
@@ -40,7 +43,7 @@
                 <div class="sidebar-brand-icon rotate-n-15">
                     <i class="fas fa-laugh-wink"></i>
                 </div>
-                <div class="sidebar-brand-text mx-3">SB Admin <sup>2</sup></div>
+                <div class="sidebar-brand-text mx-3">JM Admin <sup>2</sup></div>
             </a>
 
             <!-- Divider -->
@@ -401,6 +404,16 @@
                                         </tr>
                                     </tfoot>
                                     <tbody>
+                                    	<c:forEach items="${list}" var="index">
+											<tr>
+												<td>${index.idx}</td>
+												<td>${index.title}</td>
+												<td>${index.name}</td>
+												<td>${index.email}</td>
+												<td>${index.wdate}</td>
+												<td>${index.see}</td>
+											</tr>
+                                    	</c:forEach>
                                         <tr>
                                             <td>Tiger Nixon</td>
                                             <td>System Architect</td>

@@ -11,11 +11,17 @@ public class Board {
 	private String email;
 	private String see;
 	
+	private int start;
+	
+	
+
 	@Override
 	public String toString() {
 		return "Board [idx=" + idx + ", title=" + title + ", pass=" + pass + ", content=" + content + ", wdate=" + wdate
-				+ ", name=" + name + ", email=" + email + ", see=" + see + "]";
+				+ ", name=" + name + ", email=" + email + ", see=" + see + ", start=" + start + "]";
 	}
+
+	
 
 	public Board() {}
 	
@@ -30,6 +36,13 @@ public class Board {
 		this.name = name;
 		this.email = email;
 		this.see = see;
+	}
+	
+	public int getStart() {
+		return start;
+	}
+	public void setStart(int start) {
+		this.start = start;
 	}
 	public int getIdx() {
 		return idx;
