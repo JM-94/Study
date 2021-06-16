@@ -1,0 +1,11 @@
+{
+  "students": {
+    "student": [
+      {
+        "name": "안준모",
+        "age": 28,
+        "hakbeon": "13"
+      }
+    ]
+  }
+}
