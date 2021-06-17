@@ -1,0 +1,38 @@
+{
+  "doctors": {
+    "doctor": [
+      {
+        "name": "안준모",
+        "sabeon": "123"
+      },
+      {
+        "name": "이한글",
+        "sabeon": "13"
+      },
+      {
+        "name": "홍성인",
+        "sabeon": "12"
+      },
+      {
+        "name": "이재문",
+        "sabeon": "12"
+      },
+      {
+        "name": "김관덕",
+        "sabeon": "11"
+      },
+      {
+        "name": "김두희",
+        "sabeon": "21"
+      },
+      {
+        "name": "이시형",
+        "sabeon": "13"
+      },
+      {
+        "name": "김운식",
+        "sabeon": "13"
+      }
+    ]
+  }
+}

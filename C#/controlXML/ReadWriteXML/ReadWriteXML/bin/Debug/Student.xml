@@ -1,0 +1,61 @@
+<students>  <student>
+ <name>안준모</name>
+ <age>28</age>
+ <hakbeon>130610</hakbeon>
+ <hakgwa>경영</hakgwa>
+ <gender>남</gender>
+  </student>  <student>
+ <name>박정은</name>
+ <age>28</age>
+ <hakbeon>130609</hakbeon>
+ <hakgwa>경영</hakgwa>
+ <gender>여</gender>
+  </student>  <student>
+ <name>이한글</name>
+ <age>28</age>
+ <hakbeon>130780</hakbeon>
+ <hakgwa>산림</hakgwa>
+ <gender>남</gender>
+  </student>  <student>
+ <name>김병찬</name>
+ <age>28</age>
+ <hakbeon>135798</hakbeon>
+ <hakgwa>자동차</hakgwa>
+ <gender>남</gender>
+  </student>  <student>
+ <name>안준모</name>
+ <age>28</age>
+ <hakbeon>130610</hakbeon>
+ <hakgwa>경영</hakgwa>
+ <gender>남</gender>
+  </student>  <student>
+ <name>박정은</name>
+ <age>28</age>
+ <hakbeon>130609</hakbeon>
+ <hakgwa>경영</hakgwa>
+ <gender>여</gender>
+  </student>  <student>
+ <name>이한글</name>
+ <age>28</age>
+ <hakbeon>130780</hakbeon>
+ <hakgwa>산림</hakgwa>
+ <gender>남</gender>
+  </student>  <student>
+ <name>김병찬</name>
+ <age>28</age>
+ <hakbeon>135798</hakbeon>
+ <hakgwa>자동차</hakgwa>
+ <gender>남</gender>
+  </student>  <student>
+ <name>김민아</name>
+ <age>24</age>
+ <hakbeon>178795</hakbeon>
+ <hakgwa>미술</hakgwa>
+ <gender>여</gender>
+  </student>  <student>
+ <name>김지원</name>
+ <age>22</age>
+ <hakbeon>1978654</hakbeon>
+ <hakgwa>패션</hakgwa>
+ <gender>여</gender>
+  </student></students>

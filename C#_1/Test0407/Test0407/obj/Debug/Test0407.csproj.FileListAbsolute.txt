@@ -1,7 +1,0 @@
-D:\Ai\JMfile\C#\Test0407\Test0407\bin\Debug\Test0407.exe.config
-D:\Ai\JMfile\C#\Test0407\Test0407\bin\Debug\Test0407.exe
-D:\Ai\JMfile\C#\Test0407\Test0407\bin\Debug\Test0407.pdb
-D:\Ai\JMfile\C#\Test0407\Test0407\obj\Debug\Test0407.csprojAssemblyReference.cache
-D:\Ai\JMfile\C#\Test0407\Test0407\obj\Debug\Test0407.csproj.CoreCompileInputs.cache
-D:\Ai\JMfile\C#\Test0407\Test0407\obj\Debug\Test0407.exe
-D:\Ai\JMfile\C#\Test0407\Test0407\obj\Debug\Test0407.pdb

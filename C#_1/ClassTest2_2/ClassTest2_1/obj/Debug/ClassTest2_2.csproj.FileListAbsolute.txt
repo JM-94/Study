@@ -1,7 +1,0 @@
-E:\kb2021_c#_work\ClassTest2_2\ClassTest2_1\bin\Debug\ClassTest2_1.exe.config
-E:\kb2021_c#_work\ClassTest2_2\ClassTest2_1\bin\Debug\ClassTest2_1.exe
-E:\kb2021_c#_work\ClassTest2_2\ClassTest2_1\bin\Debug\ClassTest2_1.pdb
-E:\kb2021_c#_work\ClassTest2_2\ClassTest2_1\obj\Debug\ClassTest2_2.csprojAssemblyReference.cache
-E:\kb2021_c#_work\ClassTest2_2\ClassTest2_1\obj\Debug\ClassTest2_2.csproj.CoreCompileInputs.cache
-E:\kb2021_c#_work\ClassTest2_2\ClassTest2_1\obj\Debug\ClassTest2_1.exe
-E:\kb2021_c#_work\ClassTest2_2\ClassTest2_1\obj\Debug\ClassTest2_1.pdb

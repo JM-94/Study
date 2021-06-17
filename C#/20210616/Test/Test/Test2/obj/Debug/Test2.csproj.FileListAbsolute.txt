@@ -1,0 +1,13 @@
+D:\Ai\Study\C#_2\20210616\Test\Test\Test2\obj\Debug\Test2.csprojAssemblyReference.cache
+D:\Ai\Study\C#_2\20210616\Test\Test\Test2\obj\Debug\Test2.Form1.resources
+D:\Ai\Study\C#_2\20210616\Test\Test\Test2\obj\Debug\Test2.Properties.Resources.resources
+D:\Ai\Study\C#_2\20210616\Test\Test\Test2\obj\Debug\Test2.csproj.GenerateResource.cache
+D:\Ai\Study\C#_2\20210616\Test\Test\Test2\obj\Debug\Test2.csproj.CoreCompileInputs.cache
+D:\Ai\Study\C#_2\20210616\Test\Test\Test2\bin\Debug\Test2.exe.config
+D:\Ai\Study\C#_2\20210616\Test\Test\Test2\bin\Debug\Test2.exe
+D:\Ai\Study\C#_2\20210616\Test\Test\Test2\bin\Debug\Test2.pdb
+D:\Ai\Study\C#_2\20210616\Test\Test\Test2\bin\Debug\Newtonsoft.Json.dll
+D:\Ai\Study\C#_2\20210616\Test\Test\Test2\bin\Debug\Newtonsoft.Json.xml
+D:\Ai\Study\C#_2\20210616\Test\Test\Test2\obj\Debug\Test2.csproj.CopyComplete
+D:\Ai\Study\C#_2\20210616\Test\Test\Test2\obj\Debug\Test2.exe
+D:\Ai\Study\C#_2\20210616\Test\Test\Test2\obj\Debug\Test2.pdb
