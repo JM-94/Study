@@ -1,5 +1,7 @@
+<%@page import="com.org.mbat.freeboard.Board"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form" %>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,32 +13,20 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>MH Admin Freeboard</title>
-
+    <title>JM Admin Freeboard</title>
     <!-- Custom fonts for this template -->
     <link href="/resources/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link
         href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
         rel="stylesheet">
-
     <!-- Custom styles for this template -->
     <link href="/resources/css/sb-admin-2.min.css" rel="stylesheet">
-
     <!-- Custom styles for this page -->
     <link href="/resources/vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
-
-	<script type="text/javascript">
-		function doView(idx){
-			location.href='/freeboard/view?idx='+idx;
-		}
-	</script>
-
+	
 </head>
 
 <body id="page-top">
-<%-- 	${data}<br> --%>
-<%-- 	${strlist}<br> --%>
-<%-- 	${mylist}<br> --%>
 
     <!-- Page Wrapper -->
     <div id="wrapper">
@@ -372,56 +362,39 @@
 
                     <!-- Page Heading -->
                     <h1 class="h3 mb-2 text-gray-800">Freeboard</h1>
-                    <p class="mb-4"> 자유 게시판...하고 싶은말 하세요... 
-<!--                         <a target="_blank" href="https://datatables.net">official DataTables documentation</a>. -->
+                    <p class="mb-4"> 자유 게시판...하고 싶은말 하세요...
+                        <!--                         <a target="_blank" href="https://datatables.net">official DataTables documentation</a>. -->
                     </p>
 
                     <!-- DataTales Example -->
                     <div class="card shadow mb-4">
                         <div class="card-header py-3">
-                        	<div style="float:left">
-                            	<h6 class="m-0 font-weight-bold text-primary">Freeboard</h6>
-                            </div>
-                            <div style="float:right">
-                            	<a class="m-0 font-weight-bold text-primary" href="/freeboard/insertform">글쓰기</a>
-                            </div>
+                            <h6 class="m-0 font-weight-bold text-primary">Freeboard</h6>
                         </div>
                         <div class="card-body" style="clear: both">
                             <div class="table-responsive">
-                                <table class="table table-bordered" id="freeboardTable" width="100%" cellspacing="0">
-                                    <thead>
-                                        <tr>
-                                            <th>No</th>
-                                            <th>제목</th>
-                                            <th>작성자</th>
-                                            <th>이메일</th>
-                                            <th>날짜</th>
-                                            <th>조회</th>
-                                        </tr>
-                                    </thead>
-                                    <tfoot>
-                                        <tr>
-                                            <th>No</th>
-                                            <th>제목</th>
-                                            <th>작성자</th>
-                                            <th>이메일</th>
-                                            <th>날짜</th>
-                                            <th>조회</th>
-                                        </tr>
-                                    </tfoot>
-                                    <tbody>
-										<c:forEach items="${list}" var="index">
-											<tr style="cursor:pointer;" onclick="doView('${index.idx}')">
-												<td>${index.idx}</td>
-												<td>${index.title}</td>
-												<td>${index.name}</td>
-												<td>${index.email}</td>
-												<td>${index.wdate}</td>
-												<td>${index.see}</td>
-											</tr>
-										</c:forEach>                                    
-                                    </tbody>
-                                </table>                                
+                                <form name="form" id="form" role="form" method="post" action="/freeboard/insert">
+                                    <div class="mb-3">
+                                        <label for="title">제목</label>
+                                        ${board.title}
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="name">작성자</label>
+                                        ${board.name }
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="email">이메일</label>
+                                        ${board.email }
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="content">내용</label>
+                                        ${board.content }
+                                    </div>
+                                    <div class="mb-3">
+                                        <input class="btn btn-primary" type="button" value="수정" id="update"/>
+                                        <input class="btn btn-primary" type="button" value="뒤로" id="back"/>
+                                    </div>
+                                </form>
                             </div>
                         </div>
                     </div>
@@ -489,7 +462,35 @@
 
     <!-- Page level custom scripts -->
     <script src="/resources/js/demo/datatables-demo.js"></script>
-
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('#update').on('click',function(){
+// 				var idx = ${board.idx};
+				var idx = <%=((Board)request.getAttribute("board")).getIdx()%>;
+				location.href='updateform?idx='+idx;
+			})
+			$('#back').on('click',function(){ 
+				history.go(-1);				
+			})
+		})
+	</script>
 </body>
 
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

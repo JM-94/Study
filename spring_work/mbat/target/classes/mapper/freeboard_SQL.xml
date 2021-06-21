@@ -3,6 +3,16 @@
     "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
     
 <mapper namespace="freeboard">
+	<update id="updateone" parameterType="com.org.mbat.freeboard.Board">
+		UPDATE FREEBOARD
+		SET TITLE= #{title},
+			PASS = #{pass},
+			CONTENT = #{content},
+			WDATE = now(),
+			NAME = #{name},
+			EMAIL = #{email}
+		WHERE IDX = #{idx}
+	</update>
 	<insert id="insert" parameterType="com.org.mbat.freeboard.Board">
 		INSERT INTO FREEBOARD
 		(TITLE, PASS, CONTENT, 
@@ -15,6 +25,10 @@
 						resultType="com.org.mbat.freeboard.Board">
 		SELECT * FROM FREEBOARD
 		order by idx desc
-		limit #{start},10;
+		<!--limit #{start},10; -->
+	</select>
+	<select id="selectone" parameterType="int" resultType="com.org.mbat.freeboard.Board">
+		SELECT * FROM FREEBOARD WHERE IDX = #{idx}
 	</select>
 </mapper>
+
