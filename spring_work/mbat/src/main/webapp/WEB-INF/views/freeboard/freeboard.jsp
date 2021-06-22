@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,7 +13,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>MH Admin Freeboard</title>
+    <title>JM Admin Freeboard</title>
 
     <!-- Custom fonts for this template -->
     <link href="/resources/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -27,10 +29,9 @@
 
 	<script type="text/javascript">
 		function doView(idx){
-			location.href='/freeboard/view?idx='+idx;
+			
 		}
 	</script>
-
 </head>
 
 <body id="page-top">
@@ -383,14 +384,17 @@
                             	<h6 class="m-0 font-weight-bold text-primary">Freeboard</h6>
                             </div>
                             <div style="float:right">
-                            	<a class="m-0 font-weight-bold text-primary" href="/freeboard/insertform">글쓰기</a>
+                            	<button id="delete" class="m-0 font-weight-bold btn btn-primary">삭제</button>
+                            	<a class="m-0 font-weight-bold btn btn-primary" href="/freeboard/insertform">글쓰기</a>
                             </div>
                         </div>
                         <div class="card-body" style="clear: both">
                             <div class="table-responsive">
+                            	<form id="frm" action="/freeboard/delete" method="post">
                                 <table class="table table-bordered" id="freeboardTable" width="100%" cellspacing="0">
                                     <thead>
                                         <tr>
+                                        	<td></td>
                                             <th>No</th>
                                             <th>제목</th>
                                             <th>작성자</th>
@@ -401,6 +405,7 @@
                                     </thead>
                                     <tfoot>
                                         <tr>
+                                        	<td></td>
                                             <th>No</th>
                                             <th>제목</th>
                                             <th>작성자</th>
@@ -411,7 +416,11 @@
                                     </tfoot>
                                     <tbody>
 										<c:forEach items="${list}" var="index">
-											<tr style="cursor:pointer;" onclick="doView('${index.idx}')">
+											<tr style="cursor:pointer;" class="ttr" value="${index.idx}">
+												<td class='ftd'>
+												<input style="width:100%;"
+												type="checkbox" name="cks" class="ckcls" value="${index.idx}"/>
+												</td>
 												<td>${index.idx}</td>
 												<td>${index.title}</td>
 												<td>${index.name}</td>
@@ -419,9 +428,10 @@
 												<td>${index.wdate}</td>
 												<td>${index.see}</td>
 											</tr>
-										</c:forEach>                                    
+										</c:forEach>
                                     </tbody>
-                                </table>                                
+                                </table>
+                                </form>       
                             </div>
                         </div>
                     </div>
@@ -489,7 +499,46 @@
 
     <!-- Page level custom scripts -->
     <script src="/resources/js/demo/datatables-demo.js"></script>
+	<script type="text/javascript">
+		$('#delete').on('click',function(e){
+			var ret = confirm('삭제 하시겠습니까?')
+			if(ret==true){
+				$('#frm').submit();
+			}
+			else
+				return;
+		});
+		$('.ftd').on('click',function(e){
+			//e.preventDefault();	본인이벤트막기
+			e.stopPropagation();	// 부모이벤트 막기
+// 			e.stopImmediatePropagation();	// 부모이벤트 즉시막기
+		});
+		$('.ttr').on('click',function(e){
+			e.preventDefault();
+			e.stopPropagation();
+			var idx = $(this).attr('value')
 
+			location.href='/freeboard/view?idx='+idx;
+		});
+	</script>
 </body>
 
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

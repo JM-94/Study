@@ -1,5 +1,6 @@
 package com.org.mbat.freeboard;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -13,6 +14,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
 public class BoardController {
@@ -101,6 +103,19 @@ public class BoardController {
 	public String freeboardupdate(Model model, Board board) {
 		sst.update("freeboard.updateone",board);
 		return "redirect:/freeboard";
+		
 	}
 	
+	@RequestMapping(value = "/freeboard/delete", method = RequestMethod.POST)
+	public String freeboarddelete(Model model, String[] cks) {
+		ArrayList<String> cklist = new ArrayList<String>(Arrays.asList(cks));
+		if (cklist.size()>0) 
+			sst.delete("freeboard.delete",cklist);
+//		new BoardValidater().validate(board, errors);
+//		if (errors.hasErrors()) {
+//			return "freeboard/freeboardupdate";
+//		}
+//		sst.update("freeboard.updateone", board);
+		return "redirect:/freeboard";
+	}
 }
