@@ -1,0 +1,10 @@
+D:\Ai\Study\C#\20210623\MsSQL\MsSQL\bin\Debug\MsSQL.exe.config
+D:\Ai\Study\C#\20210623\MsSQL\MsSQL\bin\Debug\MsSQL.exe
+D:\Ai\Study\C#\20210623\MsSQL\MsSQL\bin\Debug\MsSQL.pdb
+D:\Ai\Study\C#\20210623\MsSQL\MsSQL\obj\Debug\MsSQL.Form1.resources
+D:\Ai\Study\C#\20210623\MsSQL\MsSQL\obj\Debug\MsSQL.Properties.Resources.resources
+D:\Ai\Study\C#\20210623\MsSQL\MsSQL\obj\Debug\MsSQL.csproj.GenerateResource.cache
+D:\Ai\Study\C#\20210623\MsSQL\MsSQL\obj\Debug\MsSQL.csproj.CoreCompileInputs.cache
+D:\Ai\Study\C#\20210623\MsSQL\MsSQL\obj\Debug\MsSQL.exe
+D:\Ai\Study\C#\20210623\MsSQL\MsSQL\obj\Debug\MsSQL.pdb
+D:\Ai\Study\C#\20210623\MsSQL\MsSQL\obj\Debug\MsSQL.csprojAssemblyReference.cache

@@ -2,12 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f031d457-c8b5-49ff-a05d-782df2d3b936" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../spring_work/mbat/src/main/java/com/org/mbat/freeboard/BoardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring_work/mbat/src/main/java/com/org/mbat/freeboard/BoardController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../spring_work/mbat/src/main/resources/mapper/freeboard_SQL.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring_work/mbat/src/main/resources/mapper/freeboard_SQL.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../spring_work/mbat/src/main/webapp/WEB-INF/views/freeboard/freeboard.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring_work/mbat/src/main/webapp/WEB-INF/views/freeboard/freeboard.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../spring_work/mbat/target/classes/com/org/mbat/freeboard/BoardController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring_work/mbat/target/classes/com/org/mbat/freeboard/BoardController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../spring_work/mbat/target/classes/mapper/freeboard_SQL.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring_work/mbat/target/classes/mapper/freeboard_SQL.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../spring_work/mbat/target/m2e-wtp/web-resources/META-INF/maven/com.org/mbat/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring_work/mbat/target/m2e-wtp/web-resources/META-INF/maven/com.org/mbat/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C#/20210617/practice_json/.vs/practice_json/v16/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/../../C#/20210617/practice_json/.vs/practice_json/v16/.suo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C#/20210617/practice_json/test/obj/Debug/DesignTimeResolveAssemblyReferences.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../C#/20210617/practice_json/test/obj/Debug/DesignTimeResolveAssemblyReferences.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../request/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../request/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../request/.idea/request.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../request/.idea/request.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../request/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../request/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../request/venv/Lib/site-packages/libs/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../request/venv/Lib/site-packages/libs/__init__.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +26,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../auto" />
   </component>
   <component name="RunManager">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">

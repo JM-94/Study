@@ -1,0 +1,10 @@
+D:\Ai\Study\C#\20210623\TraceLog\TraceLog\obj\Debug\TraceLog.csprojAssemblyReference.cache
+D:\Ai\Study\C#\20210623\TraceLog\TraceLog\obj\Debug\TraceLog.Form1.resources
+D:\Ai\Study\C#\20210623\TraceLog\TraceLog\obj\Debug\TraceLog.Properties.Resources.resources
+D:\Ai\Study\C#\20210623\TraceLog\TraceLog\obj\Debug\TraceLog.csproj.GenerateResource.cache
+D:\Ai\Study\C#\20210623\TraceLog\TraceLog\obj\Debug\TraceLog.csproj.CoreCompileInputs.cache
+D:\Ai\Study\C#\20210623\TraceLog\TraceLog\bin\Debug\TraceLog.exe.config
+D:\Ai\Study\C#\20210623\TraceLog\TraceLog\bin\Debug\TraceLog.exe
+D:\Ai\Study\C#\20210623\TraceLog\TraceLog\bin\Debug\TraceLog.pdb
+D:\Ai\Study\C#\20210623\TraceLog\TraceLog\obj\Debug\TraceLog.exe
+D:\Ai\Study\C#\20210623\TraceLog\TraceLog\obj\Debug\TraceLog.pdb
