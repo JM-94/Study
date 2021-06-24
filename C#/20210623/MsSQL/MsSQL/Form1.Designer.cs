@@ -43,7 +43,7 @@ namespace MsSQL
             // 
             // button_Select
             // 
-            this.button_Select.Location = new System.Drawing.Point(31, 337);
+            this.button_Select.Location = new System.Drawing.Point(12, 12);
             this.button_Select.Name = "button_Select";
             this.button_Select.Size = new System.Drawing.Size(75, 23);
             this.button_Select.TabIndex = 0;
@@ -56,7 +56,7 @@ namespace MsSQL
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 107);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowTemplate.Height = 23;
@@ -66,7 +66,7 @@ namespace MsSQL
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(29, 402);
+            this.label1.Location = new System.Drawing.Point(10, 77);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(16, 12);
             this.label1.TabIndex = 2;
@@ -75,7 +75,7 @@ namespace MsSQL
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(191, 402);
+            this.label2.Location = new System.Drawing.Point(172, 77);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(40, 12);
             this.label2.TabIndex = 3;
@@ -83,21 +83,21 @@ namespace MsSQL
             // 
             // textBox_ID
             // 
-            this.textBox_ID.Location = new System.Drawing.Point(73, 399);
+            this.textBox_ID.Location = new System.Drawing.Point(32, 74);
             this.textBox_ID.Name = "textBox_ID";
             this.textBox_ID.Size = new System.Drawing.Size(100, 21);
             this.textBox_ID.TabIndex = 4;
             // 
             // textBox_Birth
             // 
-            this.textBox_Birth.Location = new System.Drawing.Point(235, 399);
+            this.textBox_Birth.Location = new System.Drawing.Point(218, 74);
             this.textBox_Birth.Name = "textBox_Birth";
             this.textBox_Birth.Size = new System.Drawing.Size(100, 21);
             this.textBox_Birth.TabIndex = 5;
             // 
             // button_Insert
             // 
-            this.button_Insert.Location = new System.Drawing.Point(112, 337);
+            this.button_Insert.Location = new System.Drawing.Point(93, 12);
             this.button_Insert.Name = "button_Insert";
             this.button_Insert.Size = new System.Drawing.Size(75, 23);
             this.button_Insert.TabIndex = 6;
@@ -107,7 +107,7 @@ namespace MsSQL
             // 
             // button_update
             // 
-            this.button_update.Location = new System.Drawing.Point(193, 337);
+            this.button_update.Location = new System.Drawing.Point(174, 12);
             this.button_update.Name = "button_update";
             this.button_update.Size = new System.Drawing.Size(75, 23);
             this.button_update.TabIndex = 7;
@@ -117,7 +117,7 @@ namespace MsSQL
             // 
             // button_delete
             // 
-            this.button_delete.Location = new System.Drawing.Point(274, 337);
+            this.button_delete.Location = new System.Drawing.Point(255, 12);
             this.button_delete.Name = "button_delete";
             this.button_delete.Size = new System.Drawing.Size(75, 23);
             this.button_delete.TabIndex = 8;

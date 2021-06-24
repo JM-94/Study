@@ -1,0 +1,9 @@
+D:\Ai\Study\C#\20210623\MsSQL\DBWithClass\bin\Debug\DBWithClass.exe.config
+D:\Ai\Study\C#\20210623\MsSQL\DBWithClass\bin\Debug\DBWithClass.exe
+D:\Ai\Study\C#\20210623\MsSQL\DBWithClass\bin\Debug\DBWithClass.pdb
+D:\Ai\Study\C#\20210623\MsSQL\DBWithClass\obj\Debug\DBWithClass.Form1.resources
+D:\Ai\Study\C#\20210623\MsSQL\DBWithClass\obj\Debug\DBWithClass.Properties.Resources.resources
+D:\Ai\Study\C#\20210623\MsSQL\DBWithClass\obj\Debug\DBWithClass.csproj.GenerateResource.cache
+D:\Ai\Study\C#\20210623\MsSQL\DBWithClass\obj\Debug\DBWithClass.csproj.CoreCompileInputs.cache
+D:\Ai\Study\C#\20210623\MsSQL\DBWithClass\obj\Debug\DBWithClass.exe
+D:\Ai\Study\C#\20210623\MsSQL\DBWithClass\obj\Debug\DBWithClass.pdb

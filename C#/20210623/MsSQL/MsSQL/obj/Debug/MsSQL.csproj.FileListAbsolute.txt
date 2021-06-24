@@ -7,4 +7,3 @@ D:\Ai\Study\C#\20210623\MsSQL\MsSQL\obj\Debug\MsSQL.csproj.GenerateResource.cach
 D:\Ai\Study\C#\20210623\MsSQL\MsSQL\obj\Debug\MsSQL.csproj.CoreCompileInputs.cache
 D:\Ai\Study\C#\20210623\MsSQL\MsSQL\obj\Debug\MsSQL.exe
 D:\Ai\Study\C#\20210623\MsSQL\MsSQL\obj\Debug\MsSQL.pdb
-D:\Ai\Study\C#\20210623\MsSQL\MsSQL\obj\Debug\MsSQL.csprojAssemblyReference.cache

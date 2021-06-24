@@ -5,6 +5,10 @@ VisualStudioVersion = 16.0.31129.286
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MsSQL", "MsSQL\MsSQL.csproj", "{F6B8F61E-CDC3-48D5-A239-3D2BA347C490}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WithDBHelper", "WithDBHelper\WithDBHelper.csproj", "{177E3E6B-B6B1-4312-BDAE-38F8C7024738}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DBWithClass", "DBWithClass\DBWithClass.csproj", "{C6AE2069-1349-428E-826D-DCA0EEF189B2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{F6B8F61E-CDC3-48D5-A239-3D2BA347C490}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F6B8F61E-CDC3-48D5-A239-3D2BA347C490}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F6B8F61E-CDC3-48D5-A239-3D2BA347C490}.Release|Any CPU.Build.0 = Release|Any CPU
+		{177E3E6B-B6B1-4312-BDAE-38F8C7024738}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{177E3E6B-B6B1-4312-BDAE-38F8C7024738}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{177E3E6B-B6B1-4312-BDAE-38F8C7024738}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{177E3E6B-B6B1-4312-BDAE-38F8C7024738}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6AE2069-1349-428E-826D-DCA0EEF189B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6AE2069-1349-428E-826D-DCA0EEF189B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6AE2069-1349-428E-826D-DCA0EEF189B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6AE2069-1349-428E-826D-DCA0EEF189B2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

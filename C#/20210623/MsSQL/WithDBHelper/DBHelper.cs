@@ -1,25 +1,38 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
-using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Windows.Forms;
 
-namespace MsSQL
+namespace WithDBHelper
 {
-    public partial class Form1 : Form
+    class DBHelper
     {
-        
-        public Form1()
+        public static SqlConnection conn = new SqlConnection();
+        public static SqlDataAdapter da;
+        public static DataSet ds;
+        public static DataTable dt;
+
+        public int ex1;
+        public int ex2;
+
+        public void example()
         {
-            InitializeComponent();
+            //System.Windows.Forms.MessageBox.Show("Test");
         }
-        public SqlConnection conn = new SqlConnection();
-        private void ConnectDB()
+
+        public DBHelper instance;
+
+        public DBHelper getInstance()
+        {
+            if (instance == null)
+                instance = new DBHelper();
+            return instance;
+        }
+
+        public static void ConnectDB()
         {
             conn.ConnectionString = string.Format("Data Source=({0}); " +
                 "Initial Catalog = {1};" +
@@ -29,7 +42,8 @@ namespace MsSQL
             conn = new SqlConnection(conn.ConnectionString);
             conn.Open();
         }
-        private void Query_Select()
+
+        public static void Query_Select()
         {
             ConnectDB();
 
@@ -39,23 +53,17 @@ namespace MsSQL
             cmd.CommandText = "SELECT * FROM TB_CUST";
 
             //DataAdapter 와 DataSet으로 DB table 불러오기
-            SqlDataAdapter da = new SqlDataAdapter(cmd); //select 구문이 들어감
-            DataSet ds = new DataSet();
+            da = new SqlDataAdapter(cmd); //select 구문이 들어감
+            ds = new DataSet();
             da.Fill(ds, "TB_CUST"); // SELECT * FROM TB_CUST의 결과가 da에 입력됨
 
             //dataGridView에 DB에서 가져온 데이터 입력하기
-            dataGridView1.DataSource = ds;
-            dataGridView1.DataMember = "TB_CUST";
+            //dataGridView1.DataSource = ds;
+            //dataGridView1.DataMember = "TB_CUST";
             conn.Close(); //연결 해제
         }
-        private void button_Select_Click(object sender, EventArgs e)
-        {
-            Query_Select();
 
-            conn.Close();
-        }
-
-        private void Query_Insert()
+        public static void Query_Insert(string cust_id, string birth_dt)
         {
             ConnectDB();
             string sqlcommand = "Insert Into TB_CUST (CUST_ID, BIRTH_DT) values (@p1,@p2)";
@@ -65,20 +73,14 @@ namespace MsSQL
             cmd.CommandType = CommandType.Text;
             //Columd 명은 별도의 파라메터 형태로 선언함
             //SQL Injection을 방지하고자 함(SQL Injection : 유효하지 않은 데이터를 이용한 공격) 예: +나 ' 기호를 이용한 공격
-            cmd.Parameters.AddWithValue("@p1", textBox_ID.Text);
-            cmd.Parameters.AddWithValue("@p2", textBox_Birth.Text);
+            cmd.Parameters.AddWithValue("@p1", cust_id);
+            cmd.Parameters.AddWithValue("@p2", birth_dt);
             cmd.CommandText = sqlcommand;
             cmd.ExecuteNonQuery();  //쿼리 실행
             conn.Close();
         }
 
-        private void button_Insert_Click(object sender, EventArgs e)
-        {
-            Query_Insert();
-            Query_Select();
-        }
-
-        private void Query_update()
+        public static void Query_update(string cust_id, string birth_dt)
         {
             ConnectDB();
             string sqlcommand = "Update TB_CUST set CUST_ID=@p1, BIRTH_DT=@p2 where CUST_ID = @p3";
@@ -88,19 +90,15 @@ namespace MsSQL
             cmd.CommandType = CommandType.Text;
             //Columd 명은 별도의 파라메터 형태로 선언함
             //SQL Injection을 방지하고자 함(SQL Injection : 유효하지 않은 데이터를 이용한 공격) 예: +나 ' 기호를 이용한 공격
-            cmd.Parameters.AddWithValue("@p1", textBox_ID.Text);
-            cmd.Parameters.AddWithValue("@p2", textBox_Birth.Text);
-            cmd.Parameters.AddWithValue("@p3", textBox_ID.Text);
+            cmd.Parameters.AddWithValue("@p1", cust_id);
+            cmd.Parameters.AddWithValue("@p2", birth_dt);
+            cmd.Parameters.AddWithValue("@p3", cust_id);
             cmd.CommandText = sqlcommand;
             cmd.ExecuteNonQuery();  //쿼리 실행
             conn.Close();
         }
-        private void button_update_Click(object sender, EventArgs e)
-        {
-            Query_update();
-            Query_Select();
-        }
-        private void Query_Delete()
+
+        public static void Query_Delete(string cust_id)
         {
             ConnectDB();
             string sqlcommand = "Delete TB_CUST where CUST_id = @p1";
@@ -108,15 +106,10 @@ namespace MsSQL
 
             cmd.Connection = conn;
             cmd.CommandType = CommandType.Text;
-            cmd.Parameters.AddWithValue("@p1", textBox_ID.Text);
+            cmd.Parameters.AddWithValue("@p1", cust_id);
             cmd.CommandText = sqlcommand;
             cmd.ExecuteNonQuery();  //쿼리 실행
             conn.Close();
-        }
-        private void button_delete_Click(object sender, EventArgs e)
-        {
-            Query_Delete();
-            Query_Select();
         }
     }
 }

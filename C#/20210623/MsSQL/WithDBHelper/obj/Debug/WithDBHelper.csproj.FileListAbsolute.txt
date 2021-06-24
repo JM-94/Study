@@ -1,0 +1,10 @@
+D:\Ai\Study\C#\20210623\MsSQL\WithDBHelper\bin\Debug\WithDBHelper.exe.config
+D:\Ai\Study\C#\20210623\MsSQL\WithDBHelper\bin\Debug\WithDBHelper.exe
+D:\Ai\Study\C#\20210623\MsSQL\WithDBHelper\bin\Debug\WithDBHelper.pdb
+D:\Ai\Study\C#\20210623\MsSQL\WithDBHelper\obj\Debug\WithDBHelper.csprojAssemblyReference.cache
+D:\Ai\Study\C#\20210623\MsSQL\WithDBHelper\obj\Debug\WithDBHelper.Form1.resources
+D:\Ai\Study\C#\20210623\MsSQL\WithDBHelper\obj\Debug\WithDBHelper.Properties.Resources.resources
+D:\Ai\Study\C#\20210623\MsSQL\WithDBHelper\obj\Debug\WithDBHelper.csproj.GenerateResource.cache
+D:\Ai\Study\C#\20210623\MsSQL\WithDBHelper\obj\Debug\WithDBHelper.csproj.CoreCompileInputs.cache
+D:\Ai\Study\C#\20210623\MsSQL\WithDBHelper\obj\Debug\WithDBHelper.exe
+D:\Ai\Study\C#\20210623\MsSQL\WithDBHelper\obj\Debug\WithDBHelper.pdb
