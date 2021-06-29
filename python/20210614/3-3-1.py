@@ -1,8 +1,11 @@
+import matplotlib.pyplot as plt
 import pandas as pd
 import numpy as np
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import PolynomialFeatures
 from sklearn.linear_model import LinearRegression
+from sklearn.preprocessing import StandardScaler
+from sklearn.linear_model import Ridge, Lasso
 
 df = pd.read_csv('https://bit.ly/perch_csv_data')
 perch_full = df.to_numpy()
@@ -42,10 +45,10 @@ test_poly = poly.transform(test_input)
 
 lr = LinearRegression()
 lr.fit(train_poly, train_target)
-print('훈련 데이터를 넣을 때 리니어리그레이션알고리즘 점수')
-print(lr.score(train_poly, train_target))
-print('테스트 데이터를 넣을 때 리니어리그레이션알고리즘 점수')
-print(lr.score(test_poly, test_target))
+# print('훈련 데이터를 넣을 때 리니어리그레이션알고리즘 점수')
+# print(lr.score(train_poly, train_target))
+# print('테스트 데이터를 넣을 때 리니어리그레이션알고리즘 점수')
+# print(lr.score(test_poly, test_target))
 
 # 원래는 특성을 변형시킬때 x의 제곱까지지만
 # 특성을 더 많이 변화 시키기 위해서 degree 5로 변경
@@ -60,10 +63,69 @@ test_poly = poly.transform(test_input)
 # print(poly.get_feature_names())
 
 lr.fit(train_poly, train_target)
-print("55개의 특성을 가지고")
-print("훈련 데이터로 리니어모델을 점수")
-print(lr.score(train_poly, train_target))
-print("테스트 데이터로 리니어모델을 점수")
-print(lr.score(test_poly, test_target))
+# print("55개의 특성을 가지고")
+# print("훈련 데이터로 리니어모델을 점수")
+# print(lr.score(train_poly, train_target))
+# print("테스트 데이터로 리니어모델을 점수")
+# print(lr.score(test_poly, test_target))
+
+
+ss = StandardScaler()
+ss.fit(train_poly)
+train_scaled = ss.transform(train_poly)
+test_scaled = ss.transform(test_poly)
+
+# print(train_scaled[0])
+# print(test_scaled[0])
+
+ridge = Ridge()
+ridge.fit(train_scaled,train_target)
+
+print(ridge.score(train_scaled, train_target))
+print(ridge.score(test_scaled, test_target))
+
+train_scores = []
+test_scores = []
+alpha_list = [0.001, 0.01, 0.1, 1, 10, 100]
+
+for ele in alpha_list:
+    ridge = Ridge(alpha=ele)
+    ridge.fit(train_scaled, train_target)
+    train = ridge.score(train_scaled, train_target)
+    train_scores.append(train)
+    test = ridge.score(test_scaled, test_target)
+    test_scores.append(test)
+
+# print(train_scores)
+# print(test_scores)
+
+plt.plot(np.log10(alpha_list),train_scores)
+plt.plot(np.log10(alpha_list),test_scores)
+plt.xlabel("alpha_list")
+plt.ylabel("R2")
+plt.show()
+
+
+train_scores = []
+test_scores = []
+alpha_list = [0.001, 0.01, 0.1, 1, 10, 100]
+
+for ele in alpha_list:
+    lasso = Lasso(alpha=ele)
+    lasso.fit(train_scaled, train_target)
+    train = lasso.score(train_scaled, train_target)
+    train_scores.append(train)
+    test = lasso.score(test_scaled, test_target)
+    test_scores.append(test)
+
+# print(train_scores)
+# print(test_scores)
+
+plt.plot(np.log10(alpha_list),train_scores)
+plt.plot(np.log10(alpha_list),test_scores)
+plt.xlabel("alpha_list")
+plt.ylabel("R2")
+plt.show()
+
 
 
