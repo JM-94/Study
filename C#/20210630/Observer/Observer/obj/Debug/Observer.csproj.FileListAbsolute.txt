@@ -1,0 +1,13 @@
+D:\Ai\Study\C#\20210630\Observer\Observer\obj\Debug\Observer.csprojAssemblyReference.cache
+D:\Ai\Study\C#\20210630\Observer\Observer\obj\Debug\Observer.Form1.resources
+D:\Ai\Study\C#\20210630\Observer\Observer\obj\Debug\Observer.Form2.resources
+D:\Ai\Study\C#\20210630\Observer\Observer\obj\Debug\Observer.Form3.resources
+D:\Ai\Study\C#\20210630\Observer\Observer\obj\Debug\Observer.Form4.resources
+D:\Ai\Study\C#\20210630\Observer\Observer\obj\Debug\Observer.Properties.Resources.resources
+D:\Ai\Study\C#\20210630\Observer\Observer\obj\Debug\Observer.csproj.GenerateResource.cache
+D:\Ai\Study\C#\20210630\Observer\Observer\obj\Debug\Observer.csproj.CoreCompileInputs.cache
+D:\Ai\Study\C#\20210630\Observer\Observer\bin\Debug\Observer.exe.config
+D:\Ai\Study\C#\20210630\Observer\Observer\bin\Debug\Observer.exe
+D:\Ai\Study\C#\20210630\Observer\Observer\bin\Debug\Observer.pdb
+D:\Ai\Study\C#\20210630\Observer\Observer\obj\Debug\Observer.exe
+D:\Ai\Study\C#\20210630\Observer\Observer\obj\Debug\Observer.pdb
