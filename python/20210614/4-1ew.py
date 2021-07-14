@@ -42,6 +42,9 @@ target_bream_smelt = train_target[bream_smelt_indexes]
 lr = LogisticRegression()
 lr.fit(train_bream_smelt, target_bream_smelt)
 
+
+
+
 로지스틱확률 = lr.predict_proba(train_bream_smelt[:5])
 print(로지스틱확률)
 
@@ -57,10 +60,14 @@ print(expit(z))
     다중분류
 '''
 lr = LogisticRegression()
-lr.fit(train_input, train_target)
+lr.fit(train_scaled, train_target)
 
+myz = lr.decision_function(test_scaled)
+로지스틱점수 = lr.score(test_scaled, test_target)
 로지스틱확률 = lr.predict_proba(train_scaled[:5])
-print(로지스틱확률)
+print('mya', np.round(myz, decimals=3)[:5])
+print('로지스틱점수', 로지스틱점수)
+print(np.round(로지스틱확률, decimals=3))
 
 # plt.xlabel('Weight')
 # plt.ylabel('Length')
@@ -81,7 +88,11 @@ print(로지스틱확률)
 # softmax => 확률
 # predict_proba -> 확률
 
-
+'''
+    로지스틱 리그레이션(분류)
+    이진분류 -> 시그모이드 확률
+    다중분류 -> 소프트맥스 확률
+'''
 
 
 
