@@ -4,6 +4,8 @@
     numpy 나온걸 이웃알고리즘....
     cv2.imread predict 하게되면... 어떤...
 '''
+import numpy as np
+
 import cv2
 GREEN = 0
 BLUE = 1
@@ -11,7 +13,7 @@ RED = 2
 
 def resized20(img):
     resized = cv2.resize(img,(20,20))
-    return resized
+    return resized.reshape(-1,400).astype(np.float32)
 
 def getcolors(img, color):
     other_1 = (color + 1) % 3
